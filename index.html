@@ -1,0 +1,156 @@
+<!-DOCTYPE html>
+<html>
+   <head>
+      <title>Terra Tasks</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5ef;
+            color: #322f2f;
+            background-image: url("trees.JPG");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center bottom;
+            margin: 0;
+            padding 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 0;
+            margin 0;
+        }
+        nav {
+            background-color: #d8eac8;
+            position: relative;
+            margin: 0;
+        }
+        nav h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2d7740; 
+            transition: color 0.4s ease-in-out;
+        }
+
+        a:hover {
+            color: #063913; /
+        }
+
+        nav a {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 42px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 15px;
+        }
+        #login {
+            background-color: #f2f3f1;
+            padding: 30px;
+            padding-top: 10px;
+            text-align: center;
+            margin: 40px auto;
+            transform: translate(-50%, -50%);
+            top: 65%;
+            left: 50%;
+            position: absolute;
+            border: 2px solid black;
+        }
+
+        #earth {
+            position: absolute;
+            top: 0;
+            left: 20%; 
+        }
+
+        #earth2 {
+            position: absolute;
+            top: 0;
+            right: 20%; 
+        }
+
+        #bulb {
+            position: absolute;
+            top: 0;
+            left: 10%; 
+        }
+
+        #bulb2 {
+            position: absolute;
+            top: 0;
+            right: 10%; 
+        }
+
+      </style>
+   </head>
+   <body>
+        <nav>
+            <h1>Terra Taskers</h1>
+            <img id="earth" src="earth.png" width="100" length="100" alt text="polluted earth">
+            <img id="earth2" src="earth.png" width="100" length="100" alt text="polluted earth">
+            <img id="bulb" src="bulb.png" width="75" length="75" alt text="innovation">
+            <img id="bulb2" src="bulb.png" width="75" length="75" alt text="innovation">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./checklist.html">Checklist</a></li>
+                <li><a href="./feed.html">Feed</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h2>About</h2>
+        <p>Insert description here _____</p>
+        <br><br>
+        <p>Logo will be inserted here</p>
+        <div id="login">
+            <p><u>Login</u></p>
+            <form>
+              <label>Name:</label>
+              <input type="text" name="fullname">
+              <br><br>
+              <label>Password:</label>
+              <input type="password" name="password">
+              <br><br>
+              <!-- Clears the form-->
+              <button type="reset" onclick="hide()">Submit</button>
+            </form>
+        </div>
+        <script>
+            function hide () {
+               document.getElementById("login").style.display = "none";
+            }
+         </script>
+        
+   </body>
+</html>
