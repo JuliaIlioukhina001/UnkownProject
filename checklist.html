@@ -1,0 +1,241 @@
+<!-DOCTYPE html>
+<html>
+   <head>
+      <title>Terra Tasks</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5ef;
+            color: #322f2f;
+            background-image: url("trees.JPG");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center bottom;
+            margin: 0;
+            padding 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 0;
+            margin 0;
+        }
+        nav {
+            background-color: #d8eac8;
+            position: relative;
+            margin: 0;
+        }
+        nav h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2d7740; 
+            transition: color 0.4s ease-in-out;
+        }
+
+        a:hover {
+            color: #063913; /
+        }
+
+        nav a {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 42px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 15px;
+        }
+       
+        #earth {
+            position: absolute;
+            top: 0;
+            left: 20%; 
+        }
+
+        #earth2 {
+            position: absolute;
+            top: 0;
+            right: 20%; 
+        }
+
+        #bulb {
+            position: absolute;
+            top: 0;
+            left: 10%; 
+        }
+
+        #bulb2 {
+            position: absolute;
+            top: 0;
+            right: 10%; 
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 15px auto;
+            width: 500px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .checklist input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checklist input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #778;
+        }
+        .upload-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 20px;
+        }
+
+      </style>
+   </head>
+   <body>
+        <nav>
+            <h1>Terra Taskers</h1>
+            <img id="earth" src="earth.png" width="100" length="100" alt text="polluted earth">
+            <img id="earth2" src="earth.png" width="100" length="100" alt text="polluted earth">
+            <img id="bulb" src="bulb.png" width="75" length="75" alt text="innovation">
+            <img id="bulb2" src="bulb.png" width="75" length="75" alt text="innovation">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./checklist.html">Checklist</a></li>
+                <li><a href="./feed.html">Feed</a></li>
+            </ul>
+        </nav>
+        <br>
+    
+        <ul class="checklist">
+            <h1>Weekly Checklist</h1><br>
+            <li>
+                <input type="checkbox">
+                <label for="item1">Pick up a bag full of garbage</label>
+                <div id="img1" class="upload-section">
+                    <input type="file" name="image1">
+                    <button class="upload-button" data-task="task1"onclick="hide('img1')">Upload</button>
+                    <span id="uploaded1" class="uploaded-text"></span>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item2">Commute to work/school by walking, biking, or taking the bus</label>
+                <div id="img2" class="upload-section">
+                    <input type="file" name="image2">
+                    <button class="upload-button" data-task="task2"onclick="hide('img2')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item3">Try the beyond meat burger</label>
+                <div id="img3" class="upload-section">
+                    <input type="file" name="image3">
+                    <button class="upload-button" data-task="task3"onclick="hide('img3')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item4">Bring your own reusable bag for the next shopping trip</label>
+                <div id="img4" class="upload-section">
+                    <input type="file" name="image4">
+                    <button class="upload-button" data-task="task4"onclick="hide('img4')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item5">Make a DIY craft from recycled materials</label>
+                <div id="img5" class="upload-section">
+                    <input type="file" name="image5">
+                    <button class="upload-button" data-task="task5"onclick="hide('img5')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item6">Research geothermal energy</label>
+                <div id="img6" class="upload-section">
+                    <input type="file" name="image6">
+                    <button class="upload-button" data-task="task6"onclick="hide('img6')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item7">Go biking to a farmers market</label>
+                <div id="img7" class="upload-section">
+                    <input type="file" name="image7">
+                    <button class="upload-button" data-task="task7"onclick="hide('img7')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item8">Plant some sunflowers in your garden</label>
+                <div id="img8" class="upload-section">
+                    <input type="file" name="image8">
+                    <button class="upload-button" data-task="task8"onclick="hide('img8')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item9">Turn off your lights for the evening and go stargazing</label>
+                <div id="img9" class="upload-section">
+                    <input type="file" name="image9">
+                    <button class="upload-button" data-task="task9"onclick="hide('img9')">Upload</button>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="item10">Host an all vegan cookout</label>
+                <div id="img10" class="upload-section">
+                    <input type="file" name="image10">
+                    <button class="upload-button" data-task="task10"onclick="hide('img10')">Upload</button>
+                </div>
+            </li>
+        </ul>
+        <script>
+            function hide(iId) {
+                document.getElementById(iId).style.display = "none";
+            } 
+         </script>
+   </body>
+</html>
