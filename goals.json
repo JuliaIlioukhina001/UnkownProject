@@ -1,0 +1,57 @@
+[
+  {
+    "goal": "Bring Your Own Shopping Bag",
+    "description": "Carry a reusable bag for groceries and shopping trips.",
+    "reward": "0.20"
+  },
+  {
+    "goal": "Turn Off Lights",
+    "description": "Remember to turn off lights when you leave a room.",
+    "reward": "0.10"
+  },
+  {
+    "goal": "Recycle Properly",
+    "description": "Learn your local recycling guidelines and sort your waste accordingly.",
+    "reward": "0.15"
+  },
+  {
+    "goal": "Unplug Chargers",
+    "description": "Unplug chargers and electronics when they're not in use.",
+    "reward": "0.10"
+  },
+  {
+    "goal": "Carpool for Errands",
+    "description": "Share rides with friends or neighbors when running errands.",
+    "reward": "0.30"
+  },
+  {
+    "goal": "Plant a Mini Herb Garden",
+    "description": "Grow your own herbs in small pots or containers.",
+    "reward": "0.50"
+  },
+  {
+    "goal": "Use Reusable Water Bottles",
+    "description": "Stay hydrated with a reusable water bottle instead of single-use plastic ones.",
+    "reward": "0.25"
+  },
+  {
+    "goal": "Compost Food Scraps",
+    "description": "Start composting fruit and vegetable scraps for nutrient-rich soil.",
+    "reward": "0.40"
+  },
+  {
+    "goal": "Turn Thermostat Down",
+    "description": "Lower your thermostat by a degree or two in winter to save energy.",
+    "reward": "0.30"
+  },
+  {
+    "goal": "Pick Up Litter",
+    "description": "Whenever you see litter, take a moment to pick it up and dispose of it properly.",
+    "reward": "0.20"
+  },
+  {
+    "goal": "Shop Secondhand",
+    "description": "Explore thrift stores or online platforms for secondhand clothes and items.",
+    "reward": "0.50"
+  }
+]
